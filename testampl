@@ -1,0 +1,14 @@
+set Tasks;
+param durations {j in Tasks};
+param start {j in Tasks};
+set Groups;
+param maxUnusedWorkers {i in Groups }
+//set missions;
+//set mayperform0 {Tasks} within Groups;
+param mayperform {j in Tasks};
+set OptTask 
+set Workers;
+param workers {j in Groups};
+var task {t in Tasks} in (0, durations[t]);
+var opttasks {j in OptTask};
+var worker {j in Workers};
